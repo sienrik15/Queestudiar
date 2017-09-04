@@ -12,8 +12,43 @@
     z-index: 2;
 } 
 
+.scale-carousel{
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 45pt;    
+    
+}
+.scale-img{
+    height: 43px;    
+}
+.scale-conten-img{
+    padding-top: 5px;    
+}
+.style-search-header{
+    width: 350pt !important; 
+    border-radius: 25px 4px 4px 25px !important;
+}
 
+.subposition{
+    position: absolute;
+    padding-top: 15pt;
+    padding-left:0pt;
+    padding-right: 0pt;
+    z-index: 1;
+    width: -webkit-fill-available;
+}
 
+.fa-cog {
+    color: #FFFFFF;
+  } 
+
+.badge{
+    border-radius: 0px 0px 0px 0px !important;
+    background-color: #B61B1B;   
+}
+.confg-icon{
+    padding-left: 5px;
+}
 /*  */
 
 @import url('https://fonts.googleapis.com/css?family=Kumar+One');
@@ -23,7 +58,7 @@ h2 span{font-family: 'Kumar One', cursive; display:block; font-size:45px; text-t
 h2 a{color:#fff; font-weight:bold;}
 
 .color-header{
-background-image: -webkit-linear-gradient(top,rgba(99, 219, 137, 0.57),rgba(80, 163, 95, 0.56) 100%);
+background-image: -webkit-linear-gradient(top,#00695b,#00695b 100%);
 background-color: #36BA6F;
 border-color: #46B76E;
 }
@@ -35,7 +70,34 @@ border-color: #46B76E;
     margin-bottom:20px; font-weight:bold; color:#1DCF22; text-shadow:1px 1px 0 rgba(0,0,0,0.2);
 }
 .btn-default{
+    background:#00695b; color:#fff; font-weight:700; text-shadow:1px 1px 0 rgba(0,0,0,0.2); font-size:14px;
+    border-radius: 0px 0px 0px 0px !important;
+    width: -webkit-fill-available;
+}
+.deflt{
+    background-image: -webkit-linear-gradient(top,#0DA994 0,#0DA994 100%) !important; 
+    background-image: -o-linear-gradient(top,#0DA994 0,#0DA994 100%) !important;
+    border-color: #00695b !important;
+    background-color: #00695b!important;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#0DA994),to(#00695b)) !important; 
+    color:#fff; 
+    margin-top: 6pt;    
+    font-weight:700; 
+    text-shadow:1px 1px 0 rgba(0,0,0,0.2); 
+    font-size:14px;
+    border-radius: 0px 0px 0px 0px !important;
+}
+.btn-search{
     background:#DFC717; color:#fff; font-weight:700; text-shadow:1px 1px 0 rgba(0,0,0,0.2); font-size:14px;
+}
+.card-text{
+ padding-left: 10pt;
+ padding-right: 10pt;
+ 
+}
+.card-title{
+    padding-left: 10pt;
+    padding-right: 10pt;
 }
 .card{
     box-shadow:2px 2px 20px rgba(0,0,0,0.3); border:none; margin-bottom:30px;

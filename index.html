@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <header class="bs-docs-nav navbar navbar-inverse navbar-static-top color-header">
+    <header class="bs-docs-nav navbar-fixed-top navbar-inverse color-header">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-expanded="false">  <span class="sr-only">Toggle navigation</span>
@@ -21,24 +21,35 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Brand</a>
+                <a class="scale-conten-img navbar-brand" href="#">
+                    <img class="scale-img" src="images/Qstudiar.png" alt="">
+                </a>
             </div>
-            <nav class="collapse navbar-collapse" id="bs-navbar">
-                <ul class="nav navbar-nav">
+            <nav class="navbar-collapse collapse " aria-expanded="false" id="bs-navbar">
+              <!--  <ul class="nav navbar-nav">
                      <li><a href="#">TAB1</a></li>
                      <li><a href="#">TAB2</a></li>
                      <li><a href="#">TAB3</a></li>
-                </ul>
+                </ul> -->
+
+                <form class="nav navbar-nav navbar-form">
+                    <div class="form-group">
+                      <input type="text" class="form-control style-search-header" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-search radios-search-rigth"><span class="glyphicon glyphicon-search"></span></button>
+                </form>
+
                 <ul class="nav navbar-nav navbar-right"> 
-                    <li><a href="#">TAB4</a></li>
-                    <li><a href="#">TAB5</a></li>
-                    <li><a href="#">TAB6</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Intituciones</a></li>
+                    <li><a href="#">Live</a></li>
+                    <button type="submit" class="btn-info btn deflt">Regístrate</button>                 
                 </ul> 
             </nav>
 
         </div>
     </header>
-    <div class="container position-search">
+<!-- <div class="container position-search">
         <div class="row">    
             <div class="col-xs-6 col-xs-offset-4">
                 <div class="input-group margin-top-search ">
@@ -63,9 +74,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <section >
-        <div class="container">
+        <div class="container scale-carousel">
             <div class="row">
                 <div id="carousel-type" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -118,11 +129,22 @@
     </section>
 
     <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 offset-md-2">
+        <div class="container ">
+            <div class="row sectionPrimer">
+                <div class="col-md-4 offset-md-2 clones">
                     <h3 class="text-center txt-type">Video Usil</h3>
                     <div class="card card-01">
+                        <div class="subposition">
+                            <div class="col-md-8">
+                                <i class="fa fa-users fa-lg fa-cog" aria-hidden="true"></i> 
+                                <span class="badge ">42</span>                                   
+                            </div>
+                            <div class="col-md-4">
+                                <span class="badge col-md-5">42/50</span>
+                                <i class="fa fa-users fa-lg fa-cog col-md-7 confg-icon" aria-hidden="true"> </i>
+                            </div>
+                                
+                        </div>          
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ"></iframe>
                         </div>
@@ -130,86 +152,16 @@
                             <span class="badge-box"><i class="fa fa-check"></i></span>
                             <h4 class="card-title">News title</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-default text-uppercase">Explore</a>
+                            <div class=" btn-group btn-group-justified">
+                                    <a href="#" class="btn btn-default text-uppercase">Explore</a>
+                                    <a href="#" class="btn btn-default text-uppercase">Explore</a>
+                            </div>
+                           
                         </div>
                      </div>
                 </div>
-                <div class="col-md-4 offset-md-2">
-                        <h3 class="text-center txt-type">Video Usil</h3>
-                        <div class="card card-01">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ"></iframe>
-                            </div>
-                            <div class="card-block">
-                                <span class="badge-box"><i class="fa fa-check"></i></span>
-                                <h4 class="card-title">News title</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-default text-uppercase">Explore</a>
-                            </div>
-                         </div>
-                    </div>
-                    <div class="col-md-4 offset-md-2">
-                            <h3 class="text-center txt-type">Video Usil</h3>
-                            <div class="card card-01">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ"></iframe>
-                                </div>
-                                <div class="card-block">
-                                    <span class="badge-box"><i class="fa fa-check"></i></span>
-                                    <h4 class="card-title">News title</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-default text-uppercase">Explore</a>
-                                </div>
-                             </div>
-                        </div>
             </div>
         </div>
-        <div class="container">
-                <div class="row">
-                    <div class="col-md-4 offset-md-2">
-                        <h3 class="text-center txt-type">Video Usil</h3>
-                        <div class="card card-01">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ"></iframe>
-                            </div>
-                            <div class="card-block">
-                                <span class="badge-box"><i class="fa fa-check"></i></span>
-                                <h4 class="card-title">News title</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-default text-uppercase">Explore</a>
-                            </div>
-                         </div>
-                    </div>
-                    <div class="col-md-4 offset-md-2">
-                            <h3 class="text-center txt-type">Video Usil</h3>
-                            <div class="card card-01">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ"></iframe>
-                                </div>
-                                <div class="card-block">
-                                    <span class="badge-box"><i class="fa fa-check"></i></span>
-                                    <h4 class="card-title">News title</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-default text-uppercase">Explore</a>
-                                </div>
-                             </div>
-                        </div>
-                    <div class="col-md-4 offset-md-2">
-                            <h3 class="text-center txt-type">Video Usil</h3>
-                            <div class="card card-01">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ"></iframe>
-                                </div>
-                                <div class="card-block">
-                                    <span class="badge-box"><i class="fa fa-check"></i></span>
-                                    <h4 class="card-title">News title</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-default text-uppercase">Explore</a>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
     </section>
 
 
